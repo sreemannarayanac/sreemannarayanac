@@ -1,0 +1,16 @@
+export const skills = [
+  { name: 'Java', category: 'language' },
+  { name: 'Spring Boot', category: 'backend' },
+  { name: 'Spring Batch', category: 'backend' },
+  { name: 'Microservices', category: 'backend' },
+  { name: 'REST APIs', category: 'backend' },
+  { name: 'Feign Clients', category: 'backend' },
+  { name: 'Backend Development', category: 'backend' },
+  { name: 'SQL (PostgreSQL, MySQL)', category: 'database' },
+  { name: 'NoSQL (MongoDB)', category: 'database' },
+  { name: 'Python', category: 'language' },
+  { name: 'NLP / ML (NER, LLMs)', category: 'ml' },
+  { name: 'CNNs / Deep Learning', category: 'ml' },
+  { name: 'Git', category: 'tools' },
+  { name: 'Flutter / Dart', category: 'language' },
+];

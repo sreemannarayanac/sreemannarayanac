@@ -1,0 +1,110 @@
+.experience {
+  background-color: var(--color-bg-secondary);
+  transition: background-color var(--transition-base);
+}
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-timeline-line);
+  transition: background-color var(--transition-base);
+}
+
+.timeline-entry {
+  position: relative;
+  padding-left: 48px;
+  padding-bottom: var(--space-3xl);
+}
+
+.timeline-entry:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  border: 3px solid var(--color-timeline-dot);
+  transition: background-color var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.timeline-header {
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-role {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.timeline-org {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-xs);
+}
+
+.timeline-period {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-accent);
+  background-color: var(--color-tag-bg);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 4px;
+  margin-bottom: var(--space-md);
+}
+
+.timeline-responsibilities {
+  list-style: none;
+}
+
+.timeline-responsibilities li {
+  position: relative;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.timeline-responsibilities li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-border);
+}
+
+@media (max-width: 480px) {
+  .timeline::before {
+    left: 11px;
+  }
+
+  .timeline-entry {
+    padding-left: 36px;
+  }
+
+  .timeline-dot {
+    left: 4px;
+    width: 16px;
+    height: 16px;
+  }
+}
